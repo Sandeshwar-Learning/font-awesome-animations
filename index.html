@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Font Awesome Animations</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <style>        
+        .fa {
+            color: #fc6;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <span id="chain" class="fa"></span>
+
+    <script>
+        function showChain() {
+            let chain = document.getElementById('chain');
+            chain.innerHTML = "&#xf0c1";
+
+            setTimeout(() => {
+                chain.innerHTML = "&#xf127";
+            }, 1000);
+        }
+
+        function animateChain() {
+            showChain()
+            setInterval(() => showChain(), 2000);
+        }
+
+        animateChain();
+        
+    </script>
+</body>
+</html>

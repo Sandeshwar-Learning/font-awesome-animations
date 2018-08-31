@@ -29,7 +29,7 @@ function animate(iconsList) {
 }
 
 // initialize an array of icons
-icons = ['f105', 'f101', 'f111'];
+const icons = ['f105', 'f101', 'f111'];
 
 // call the animation function
 animate(icons);

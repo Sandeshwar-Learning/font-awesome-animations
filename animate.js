@@ -45,6 +45,9 @@ animate(icons);
 // TailwindCSS colors list
 const colors = ['grey', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'indigo', 'purple', 'pink'];
 
+// Variant of the color
+const colorVariants = ['darkest', 'darker', 'dark', 'base', 'light', 'lighter', 'lightest'];
+
 /**
  * Returns a random element from an array
  * @param {string[]} array The actual array

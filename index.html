@@ -15,26 +15,9 @@
 </head>
 <body class="h-screen bg-grey-lighter">
     <div class="container mx-auto h-full flex justify-center items-center">
-        <span id="chain" class="fa"></span>
+        <span id="portal" class="fa"></span>
     </div>
-
-    <script>
-        function showChain() {
-            let chain = document.getElementById('chain');
-            chain.innerHTML = "&#xf0c1";
-
-            setTimeout(() => {
-                chain.innerHTML = "&#xf127";
-            }, 1000);
-        }
-
-        function animateChain() {
-            showChain()
-            setInterval(() => showChain(), 2000);
-        }
-
-        animateChain();
-        
-    </script>
+    
+    <script src="./animate.js"></script>
 </body>
 </html>

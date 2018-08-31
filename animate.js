@@ -55,7 +55,7 @@ function getRandomColorClass() {
     let color = getRandomElement(colors);
     let variant = getRandomElement(colorVariants);
 
-    return `${color}-${variant}`;
+    return `text-${color}-${variant}`;
 }
 
 /**

@@ -49,6 +49,16 @@ const colors = ['grey', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'ind
 const colorVariants = ['darkest', 'darker', 'dark', 'base', 'light', 'lighter', 'lightest'];
 
 /**
+ * Returns a random color class from tailwindCSS
+ */
+function getRandomColorClass() {
+    let color = getRandomElement(colors);
+    let variant = getRandomElement(colorVariants);
+
+    return `${color}-${variant}`;
+}
+
+/**
  * Returns a random element from an array
  * @param {string[]} array The actual array
  */

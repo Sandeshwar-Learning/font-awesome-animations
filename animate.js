@@ -1,8 +1,32 @@
+
+// ------------------------------------------------------------------------------ //
+                            // Uncomment any one of the arrays below 
+// ------------------------------------------------------------------------------ //
+
+// arrow icons animation
+//const icons = ['f105', 'f101'];
+
+// car crash animation
+const icons = ['f1b9', 'f5de', 'f5e1'];
+
+// call the animation function
+animate(icons);
+
+
+
+// ------------------------------------------------------------------------------ //
+                            // UTILITY code ahead
+// ------------------------------------------------------------------------------ //
+
 /**
  * Takes an array of icons and animates them sequentially
  * @param {string[]} iconsList 
  */
 function animate(iconsList) {
+    if(!Array.isArray(iconsList) || iconsList.length === 0) {
+        return;
+    }
+
     // Font Awesome icon prefix
     let iconPrefix = '&#x';
 
@@ -31,20 +55,6 @@ function animate(iconsList) {
     }, 1000);
 }
 
-// initialize an array of icons
-const icons = ['f105', 'f101', 'f111'];
-
-// call the animation function
-animate(icons);
-
-
-
-// ------------------------------------------------------------------------------ //
-                            // UTILITY code ahead
-// ------------------------------------------------------------------------------ //
-
-
-
 // TailwindCSS colors list
 const colors = ['grey', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'indigo', 'purple', 'pink'];
 
@@ -66,5 +76,8 @@ function getRandomColorClass() {
  * @param {string[]} array The actual array
  */
 function getRandomElement(array) {
+    if(!Array.isArray(array) || array.length === 0) {
+        return;
+    }
     return array[Math.floor(Math.random() * array.length)];
 }

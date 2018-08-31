@@ -21,6 +21,9 @@ function animate(iconsList) {
         if (currentIconIndex === iconsList.length) {
             // reset the index
             currentIconIndex = 0;
+
+            // change color
+            portal.className = 'fas ' + getRandomColorClass();
         }
 
         portal.innerHTML = iconPrefix + iconsList[currentIconIndex];

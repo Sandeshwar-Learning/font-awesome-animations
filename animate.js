@@ -34,6 +34,17 @@ const icons = ['f105', 'f101', 'f111'];
 // call the animation function
 animate(icons);
 
+
+
+// ------------------------------------------------------------------------------ //
+                            // UTILITY code ahead
+// ------------------------------------------------------------------------------ //
+
+
+
+// TailwindCSS colors list
+const colors = ['grey', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'indigo', 'purple', 'pink'];
+
 /**
  * Returns a random element from an array
  * @param {string[]} array The actual array

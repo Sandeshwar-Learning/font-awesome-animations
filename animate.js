@@ -33,3 +33,11 @@ icons = ['f105', 'f101', 'f111'];
 
 // call the animation function
 animate(icons);
+
+/**
+ * Returns a random element from an array
+ * @param {string[]} array The actual array
+ */
+function getRandomElement(array) {
+    return array[Math.floor(Math.random() * array.length)];
+}
